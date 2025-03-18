@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "assets"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "challenge-amigo-secreto_esp-main"
+	}
+}

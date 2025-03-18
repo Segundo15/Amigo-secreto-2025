@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">Amigo Secreto</h1>
+            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
+        </header>
+
+        <section class="input-section">
+            <h2 class="section-title">Digite el nombre de sus amigos</h2>
+
+            <!-- Formulario de ingreso de nombres -->
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Digite un nombre" aria-label="Nombre del amigo a agregar">
+                <button class="button-add" onclick="agregarAmigo()" aria-label="Añadir amigo">Adicionar</button>
+            </div>
+
+            <!-- Lista de amigos agregados -->
+            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+
+            <!-- Resultados del sorteo -->
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+            <!-- Botón para sortear -->
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
+                    Sortear amigo
+                </button>
+            </div>
+        </section>
+
+        <!-- Mensaje final después del sorteo -->
+        <div id="mensajeFinal" class="mensaje-final"></div>
+    </main>
+
+    <!-- Incluye el archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
